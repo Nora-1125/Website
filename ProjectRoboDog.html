@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robo Dog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Nora Kurth</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="AboutMe.html">About Me</a></li>
+								<li><a href="ProdEng.html">Production Engineering Course 2025</a></li>
+								<!-- <li><a href="generic.html">Generic</a></li>
+								<li><a href="elements.html">Elements</a></li> -->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Robo Dog</h2>
+								<p>This robotic dog can carry your tools and keep you company wherever or whenever real dogs are not the best solution.</p>
+								<!-- <div class="col-12"><span class="image fit"><img src="images/MascotQuer.png" alt="" /></span></div> -->
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h3 class="major">The Idea</h3>
+										<p>When we were looking for something cool to build as our final project for the production engineering course, <a href="https://jd1108.github.io/website/" target="_blank">Jan-Erik</a> and I wanted to create something genuinely useful — so building a quadruped robot that could carry items and follow you felt like the natural choice. We settled on a template we found on <a href="https://www.hackster.io/john-bradnam/robot-dog-boston-cbc763">hackster.io</a>. 
+											In the following I will describe the changes that were made to the original design to acommodate for the additional components needed for the follow-feature, improve traction of the feet and implement the capability to carry tools.</p>
+										<p>Disclaimer: Due to the relatively high prices of servo motors the finished robot will be a (mostly) functional scale model of what we imagined.</p>
+										<h3 class="major">The Plan</h3>
+										<p>We planed to implement the follow-feature via a radio transmitter, held by the person to be followed, and receiver built into the Robo Dog.
+											For carrying tools a tray was to be made be Laser cutting.
+											And last but not least, the Robo Dog got cast silicone feet for enhanced traction.
+										</p>
+									</section>
+
+									<section>
+										<h3 class="major">My Main Task</h3>
+										<p>Some parts could be kept the same as in the template, others had to be modified to fit the components we wanted to use or for overall functionatlity and some were designed from scratch.</p>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<h4>New or Modified Parts:</h4>
+												<ol>
+													<li>Main Body</li>
+													<li>Body Lid</li>
+													<li>Head (new)</li>
+													<li>Tail (new)</li>
+													<li>Feet (new)</li>
+													<li>Shanks</li>
+													<li>Tray</li>
+												</ol>
+											</div>
+									</section>
+
+
+									<section>
+										<!-- <h3 class="major">Image</h3>
+										<h4>Fit</h4>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-12"><span class="image fit"><img src="images/pic08.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
+											</div>
+										</div> -->
+										<h3 class="major">Design and Build Process of the Mechanical Components</h3>
+										<p><i>(for the design and build process of the electrical components please see <a href=""> Jan-Erik</a>'s page)</i></p>
+										<p> Before anything could be modified or changed all .stl files had to be converted to .step to make alteration possible.</p>
+												<h4>1. Main Body</h4>
+												<p><span class="image left"><img src="images/Body_MainSketchFinal.png" alt="" /></span>Changes made to the body include new mounts for the different electrical components, receivers for the tray and new bodyparts and getting rid of everything in the original design that was not needed. The main sketch is located on the top of the body and contains the receivers for the tray and mounts for the two main components.</p>
+												<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>The next challenge was to construct receivers for the head and the tail on the sides of the body. Here a sketch was made on each side. The receiver for the head needed a hole for the cables coming from the antennas and the receiver of the tail needed to be positioned in such a way, that the USB-C port would not be obstructed.</p>
+												<p>After the sketches were done the stuctures needed to be formed via extrusion, some additional sketches were needed at the receivers for head and tail to cut the notches and then the rounding started.</p>
+												<!-- <h4>2. Body Lid</h4>
+												<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>.<p>
+												<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>.</p>	
+												<h4>3. Head</h4>
+												<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>.</p>
+												<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>.</p>
+												<h4>4. Tail</h4>
+												<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>.</p>
+												<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>.</p> -->
+												<h4>5. Feet</h4>
+												<p><span class="image left"><img src="images/Foot_Beginning.png" alt="" /></span>The foot itself was modeled onto the shank. Afterwards the task of designing the mold for silicone casting begun. First the shape of the foot was cut out of a sufficiently larger rectangular block. This block was then split in 2 right trough the middle of the foot.</p>
+												<p><span class="image right"><img src="images/Foot_SplittingCube.png" alt="" /></span>.</p>
+											
+												<!--<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>.</p>
+												<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>.</p>
+												<h4>7. Tray</h4>
+												<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>.</p>
+												<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>.</p> -->
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									<a href="https://www.hsu-hh.de/" target="_blank">Helmut-Schmidt-Universität/Universität der Bundeswehr Hamburg</a><br />
+									Holstenhofweg 85<br />
+									22043 Hamburg
+								</li>
+								<li class="icon solid fa-cat">
+									<a href="https://github.com/Nora-1125" target="_blank">GitHub</a>
+								</li>
+								<li class=" icon solid fa-handshake">
+									<a href="https://jd1108.github.io/website/" target="_blank">Jan-Erik</a>
+								</li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Nora Kurth. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
