@@ -4154,3 +4154,24 @@ input, select, textarea {
 		}
 
 	}
+	/* Videos verhalten sich wie Bilder */
+/* Videos wie Bilder behandeln */
+.image.fit video,
+.video-fit {
+    width: 100% !important;    /* erzwingt maximale Breite innerhalb der Spalte */
+    max-width: 100% !important; /* verhindert Überlaufen */
+    height: auto;
+    display: block;
+}
+
+/* verhindert Überlaufen aus der Spalte */
+.video-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* optional: Höhe begrenzen, damit Videos nicht riesig werden */
+.fit-video {
+    max-height: 350px;
+    object-fit: cover;
+}
